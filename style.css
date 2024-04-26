@@ -5,6 +5,7 @@
 body{
     background-color: #f1f2f4;
     overflow-x: hidden;
+   margin: auto;
 
 }
                       /* MAKING NAVBAR STICKY */
@@ -13,6 +14,7 @@ header{
     top:0px;
     left:0px;
     width:100vw;
+    z-index: 9;
 }
                              /* NAV BAR STYLING */
 nav{
@@ -266,6 +268,7 @@ margin-top: 0.5vw;
 
                      /* STYLING SECTION */
 .section{
+
     
 display: flex;
 
@@ -561,14 +564,238 @@ justify-content: center;
 align-items: center;
 
 }
+.fr img{
+width:100%;
+}
 
 .icons{
     color: #edca34;
-    font-size: 0.5vw;
+    font-size: 1.5vw !important;
 }
 
 .fboxes{
     display: flex;
 justify-content: center;
 align-items: center;
+}
+
+/* MOBILE RESPONSIVE STYLING */
+.m-search{
+    display: none;
+}
+
+.mobile{
+    display: none;
+}
+.navlist{
+ visibility: hidden;
+}
+
+/* MEDIA QUERY */
+
+
+
+@media only screen and (max-width: 600px) {
+    .text{
+        font-size: 4vw !important;
+    }
+    .arrow{
+        display: none;
+    }
+    .mobile{
+        display:contents;
+    }
+    .m-search{
+
+        display: flex;
+        width:100vw;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        height: 10vw;
+padding-top: 1vw;
+padding-bottom: 1vw;
+      
+    }
+    .m-search input{
+        height: 95%;
+        width:90%;
+        border: none;
+        background-color: #f0f5ff;
+        border-top-right-radius:  0.521vw;
+        border-bottom-right-radius:  0.521vw;
+        font-size: 4vw;
+        padding-left: 2vw;
+    }
+    .m-search button{
+        
+        height: 95%;
+        width:5%;
+        background-color: #f0f5ff;
+        border: none;
+        border-top-left-radius: 0.521vw;
+        border-bottom-left-radius:  0.521vw;
+    }
+    .m-search button svg{
+        width: 70%;
+    }
+    
+    .m-search input{
+        border: 0px;
+        }
+    
+    
+    
+    
+    /* search bar^ */
+
+    
+    .navlist{
+        visibility:initial;
+        font-size: 8vw !important;
+        font-weight: 300 !important;
+       }
+       .login:hover{
+        background-color:white;
+        color: black;
+    }
+       nav span{
+        font-size: 3vw;
+       }
+       .seller{
+        display: none;
+       }
+       .dots{
+        display: none;
+       }
+nav button{
+    display: none;
+}
+nav input{
+    display: none;
+    
+}
+.left{
+    width:50%;
+}
+.right{
+    width:50%;
+    gap: 4vw;
+}
+.logo img{
+    width:20vw;
+}
+.nav-icons{
+    font-weight: 300 !important;
+    font-size: 6vw !important;
+}
+main .arrow{
+    display: none;
+}
+    
+                   /* OPTION BOX  */
+.optionsbox{
+height: 30vw !important;
+}
+.options{
+height: 100%;
+overflow-x: scroll;
+align-items: center !important;
+width: 95%;
+gap:2vw;
+}
+.items{
+width: 80%;
+align-items: center;
+font-size: 3vw;
+justify-content: center;
+margin-top: 0vw;
+}
+          /* CHANGE IMAGE  */
+
+.changeimg{
+    height: 46vw;
+
+}
+.changeimg img{
+    object-fit: cover;
+    object-position: -125vw;
+}
+                  /* SECTION  */
+.section{
+height:50vw ;
+}
+.secl{
+width: 100%;
+
+}
+.seclbox{
+    font-size: 5vw;
+}
+.secr{
+display: none;
+}
+
+ /* SECOND SECTION  */
+
+
+ .section2{
+    height: 50vw;
+ }
+ .seclbox2{
+    font-size: 5vw;
+}
+
+                   /* SECTION3  */
+.section3{
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.sec3lm{
+    display: none;
+}
+.sec3r{
+width: 90%;
+}
+.sec3l{
+    width: 50%;
+    font-size: 3vw;
+}
+.arrow3{
+    display: none;
+}
+.sec3options{
+    font-size: 2.8vw;
+}
+
+
+        /* INFO SECTION  */
+.info{
+    display: none !important;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 90vw;
+    justify-content:flex-end;
+}
+.info img{
+    
+}
+
+
+       /* FOOTER */
+
+.fl{
+font-size: 1.5vw;
+}
+.fr{
+height: ;
+}
+footer{
+    display: none;
+    height: 10vw;
+}
+
+
 }
