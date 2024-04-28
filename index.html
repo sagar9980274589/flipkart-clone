@@ -514,9 +514,13 @@ Best of Electronics
              
             }
             function prevSlide() {
-                
+                if(currentSlide==4)
+                {
+                    currentSlide = 2;
+                }
+                else{
                 currentSlide = (currentSlide + 1 ) % (slides.length);
-
+                }
                 rshowSlide();
                 
             
