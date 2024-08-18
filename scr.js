@@ -264,11 +264,12 @@ pdts[i].addEventListener('click',(e)=>{
                     itemnsnum[0].innerText=`${cartsarr.length}`;
                    alert("item added");
                     localStorage.setItem("cartitems",JSON.stringify(cartsarr));
+                    itemnsnum[0].innerText=`${ JSON.parse(localStorage.getItem("cartitems")).length}`;
                 }
                
             }
 })
-itemnsnum[0].innerText=`${ JSON.parse(localStorage.getItem("cartitems")).length}`;
+
 }
 cartbtn.addEventListener('click',()=>{
     location.href = "cart.html";
