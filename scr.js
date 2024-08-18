@@ -227,7 +227,8 @@ books.forEach((elem,index)=>{
 });
 booksctr.innerHTML=info.trim();
 //  ******************************************************************************
-
+let cartsarr1=[];
+localStorage.setItem("cartitems",JSON.stringify(cartsarr1));
 let cartsarr=JSON.parse(localStorage.getItem("cartitems"));
 let cartbtn=document.querySelector(".cart");
 
